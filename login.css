@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;    
+    background-color: #00051f;
+}
+/*--------INDEX------*/
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link a {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: #115c71;
+}
+
+.link .bar-btn {
+  padding: 0.5rem 2rem;
+  color: #fff !important;
+  background-color: #115c71;
+  border-radius: 5px;
+}
+
+.link .bar-btn:hover {
+  background-color: #060a22;
+}
+
+.page {
+  max-width: 90vw;
+  margin:  5px auto;
+  padding: 0;
+  min-height: 70vh;
+  padding: 30px;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("image/vector.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #000320;
+  border-radius: 30px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.head1 {
+  font-weight: 700;
+}
+
+.head2 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.landing p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.landing form {
+  display: flex;
+  align-items: center;
+}
+
+.landing input {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.landing button {
+  padding: 1rem;
+  color: #fff !important;
+  background-color: #115c71;
+  border-radius: 5px;
+  width: 10vw;
+  outline: none;
+  border: none;
+  filter: blur(0.2px);
+  font-size: 15px;
+}
+
+.landing button:hover {
+  background-color: #060a22;
+}
+@media (width < 900px) {
+  .link a:not(.nav__btn) {
+    display: none;
+  }
+
+  .page {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .landing {
+    text-align: center;
+  }
+
+  .landing form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+.landing .bar-btn {
+  padding: 0.5rem 2rem;
+  color: #fff !important;
+  background-color: #115c71;
+  border-radius: 5px;
+}
+
+.landing .bar-btn:hover {
+  background-color: #060a22;
+}
+
+/* DASHBOARD ADMIN */
+.container {
+  position: relative;
+  max-width: 100vw;
+  width: 100vw;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  min-height: 40vw;
+  overflow-x: auto;
+  
+}
+.tbl-container {
+  margin-top: 20px;
+  width: 90vw;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  table-layout: fixed;
+}
+
+table, th, td {
+  border: 1px solid #000000;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+th {
+  background-color: #115c71;
+}
+
+td {
+  color: #000000;
+}
+tr:hover {
+  background-color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+/*------ SEARCH ----*/
+.search-results {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333; 
+  font-size: 48px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+}
+
+label {
+  margin-right: 10px;
+  color: #333;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  margin-left: auto;
+  padding: 8px 12px;
+  background-color: #115c71;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #115c71;
+}

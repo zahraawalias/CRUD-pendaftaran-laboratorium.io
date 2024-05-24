@@ -1,0 +1,139 @@
+/* DASHBOARD ADMIN */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;    
+    background-color: #00051f;
+    max-width: 13vw;
+    overflow-x: auto;
+}
+.container {
+    position: relative;
+    max-width: 100vw;
+    width: 90vw;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    min-height: 40vw;
+    overflow-x: auto;
+    
+  }
+  .tbl-container {
+    margin-top: 20px;
+    width: 100vw;
+  }
+  
+  table {
+    width: 100vw;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #000000;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  th {
+    background-color: #115c71;
+  }
+  
+  td {
+    color: #000000;
+  }
+  tr:hover {
+    background-color: #ffffff;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  /*------ SEARCH ----*/
+  .search-results {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333; 
+    font-size: 48px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  label {
+    margin-right: 10px;
+    color: #333;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button {
+    margin-left: auto;
+    padding: 8px 12px;
+    background-color: #115c71;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #115c71;
+  }
+  
